@@ -1,0 +1,2940 @@
+{
+    "resourceType": "Bundle",
+    "id": "4b485ed7-f272-40d3-88ed-648bf49a8593",
+    "meta": {
+        "lastUpdated": "2025-02-01T18:01:41.278+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "http://localhost:8080/fhir/Patient/?_id=183&_include=*&_revinclude=*"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "http://localhost:8080/fhir/Patient/183",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "183",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:23:15.235+00:00",
+                    "source": "#DL3ANZGjUCI5znnA"
+                },
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Johnson",
+                        "given": [
+                            "Mary",
+                            "Johnson"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home"
+                    },
+                    {
+                        "system": "email",
+                        "value": "mary@gmail.com",
+                        "use": "home"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1953-01-07"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/ClinicalImpression/196",
+            "resource": {
+                "resourceType": "ClinicalImpression",
+                "id": "196",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:04.636+00:00",
+                    "source": "#lDucsZ3eu7D1vgTy"
+                },
+                "status": "completed",
+                "description": "problem",
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "summary": "plan",
+                "finding": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://e-imo.com/products/problem-it",
+                                    "code": "52144",
+                                    "display": "Neuropathy"
+                                },
+                                {
+                                    "system": "http://e-imo.com/products/problem-it-default",
+                                    "code": "52144",
+                                    "display": "Neuropathy"
+                                },
+                                {
+                                    "system": "http://fhir.com/Score",
+                                    "code": "1.0",
+                                    "display": "1.0"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                                    "code": "355.9",
+                                    "display": "355.9"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                    "code": "G62.9",
+                                    "display": "G62.9"
+                                },
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "386033004",
+                                    "display": "386033004"
+                                }
+                            ],
+                            "text": "neuropathy"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/ClinicalImpression/197",
+            "resource": {
+                "resourceType": "ClinicalImpression",
+                "id": "197",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:04.812+00:00",
+                    "source": "#vWBD9s20M3q0TrGx"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/ProblemCourse",
+                        "valueString": "Increase"
+                    }
+                ],
+                "status": "completed",
+                "description": "problem",
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "summary": "plan",
+                "finding": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://e-imo.com/products/problem-it",
+                                    "code": "63456107",
+                                    "display": "Increased physical activity"
+                                },
+                                {
+                                    "system": "http://e-imo.com/products/problem-it-default",
+                                    "code": "63456107",
+                                    "display": "Increased physical activity"
+                                },
+                                {
+                                    "system": "http://fhir.com/Score",
+                                    "code": "0.994",
+                                    "display": "0.994"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                                    "code": "V49.89",
+                                    "display": "V49.89"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                    "code": "Z78.9",
+                                    "display": "Z78.9"
+                                },
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "1171000175109",
+                                    "display": "1171000175109"
+                                }
+                            ],
+                            "text": "Increase physical activity"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/CarePlan/198",
+            "resource": {
+                "resourceType": "CarePlan",
+                "id": "198",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:05.007+00:00",
+                    "source": "#RBeQTzpOAuoCmAUd"
+                },
+                "status": "completed",
+                "intent": "plan",
+                "title": "plan",
+                "description": "procedure",
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "activity": [
+                    {
+                        "detail": {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://e-imo.com/products/problem-it",
+                                        "code": "708125",
+                                        "display": "Physical therapy"
+                                    },
+                                    {
+                                        "system": "http://e-imo.com/products/problem-it-default",
+                                        "code": "4000",
+                                        "display": "Physical therapy procedure"
+                                    },
+                                    {
+                                        "system": "http://fhir.com/Score",
+                                        "code": "1.0",
+                                        "display": "1.0"
+                                    },
+                                    {
+                                        "system": "http://www.icd10data.com/icd10pcs"
+                                    },
+                                    {
+                                        "system": "http://loinc.org"
+                                    },
+                                    {
+                                        "system": "http://www.ama-assn.org/go/cpt",
+                                        "code": "97139",
+                                        "display": "97139"
+                                    },
+                                    {
+                                        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+                                    },
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "91251008",
+                                        "display": "91251008"
+                                    }
+                                ],
+                                "text": "physical therapy"
+                            },
+                            "status": "completed"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/CarePlan/199",
+            "resource": {
+                "resourceType": "CarePlan",
+                "id": "199",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:05.291+00:00",
+                    "source": "#an1udaPmQpURD81w"
+                },
+                "status": "completed",
+                "intent": "plan",
+                "title": "plan",
+                "description": "procedure",
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "activity": [
+                    {
+                        "detail": {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://e-imo.com/products/problem-it",
+                                        "code": "30107052",
+                                        "display": "Referral to dietitian"
+                                    },
+                                    {
+                                        "system": "http://e-imo.com/products/problem-it-default",
+                                        "code": "30107052",
+                                        "display": "Referral to dietitian"
+                                    },
+                                    {
+                                        "system": "http://fhir.com/Score",
+                                        "code": "1.0",
+                                        "display": "1.0"
+                                    },
+                                    {
+                                        "system": "http://www.icd10data.com/icd10pcs"
+                                    },
+                                    {
+                                        "system": "http://loinc.org"
+                                    },
+                                    {
+                                        "system": "http://www.ama-assn.org/go/cpt"
+                                    },
+                                    {
+                                        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+                                    },
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "103699006",
+                                        "display": "103699006"
+                                    }
+                                ],
+                                "text": "Dietitian referral"
+                            },
+                            "status": "completed"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/CarePlan/200",
+            "resource": {
+                "resourceType": "CarePlan",
+                "id": "200",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:05.500+00:00",
+                    "source": "#ZueInZFDEJ59sZoT"
+                },
+                "status": "completed",
+                "intent": "plan",
+                "title": "plan",
+                "description": "procedure",
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "activity": [
+                    {
+                        "detail": {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://e-imo.com/products/problem-it",
+                                        "code": "33355142",
+                                        "display": "Weight management"
+                                    },
+                                    {
+                                        "system": "http://e-imo.com/products/problem-it-default",
+                                        "code": "33355142",
+                                        "display": "Weight management"
+                                    },
+                                    {
+                                        "system": "http://fhir.com/Score",
+                                        "code": "1.0",
+                                        "display": "1.0"
+                                    },
+                                    {
+                                        "system": "http://www.icd10data.com/icd10pcs"
+                                    },
+                                    {
+                                        "system": "http://loinc.org"
+                                    },
+                                    {
+                                        "system": "http://www.ama-assn.org/go/cpt"
+                                    },
+                                    {
+                                        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+                                    },
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "388962008",
+                                        "display": "388962008"
+                                    }
+                                ],
+                                "text": "weight management"
+                            },
+                            "status": "completed"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/CarePlan/202",
+            "resource": {
+                "resourceType": "CarePlan",
+                "id": "202",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:05.718+00:00",
+                    "source": "#NQVSmhARi7Estvp1"
+                },
+                "status": "completed",
+                "intent": "plan",
+                "title": "plan",
+                "description": "procedure",
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "activity": [
+                    {
+                        "detail": {
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://e-imo.com/products/problem-it",
+                                        "code": "27831026",
+                                        "display": "Measure weight"
+                                    },
+                                    {
+                                        "system": "http://e-imo.com/products/problem-it-default",
+                                        "code": "27831026",
+                                        "display": "Measure weight"
+                                    },
+                                    {
+                                        "system": "http://fhir.com/Score",
+                                        "code": "1.0",
+                                        "display": "1.0"
+                                    },
+                                    {
+                                        "system": "http://www.icd10data.com/icd10pcs"
+                                    },
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "3141-9",
+                                        "display": "3141-9"
+                                    },
+                                    {
+                                        "system": "http://www.ama-assn.org/go/cpt"
+                                    },
+                                    {
+                                        "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+                                    },
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "404639000",
+                                        "display": "404639000"
+                                    }
+                                ],
+                                "text": "weight"
+                            },
+                            "status": "completed"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Observation/211",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "211",
+                "meta": {
+                    "versionId": "4",
+                    "lastUpdated": "2025-02-01T17:47:40.987+00:00",
+                    "source": "#altZd3t6ZrzC8AGC"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://foo",
+                            "code": "12345"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "effectiveDateTime": "2023-04-19T09:34:50+01:00",
+                "valueQuantity": {
+                    "value": 110,
+                    "unit": "kg",
+                    "system": "http://bar",
+                    "code": "kg"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Observation/212",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "212",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:19.180+00:00",
+                    "source": "#MNJNUxe9pHaOQJyT"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/TestLabvalue",
+                        "valueString": "33 kg/m²"
+                    },
+                    {
+                        "url": "http://fhir.com/Domain",
+                        "valueString": "lab"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "vital-signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "26742248",
+                            "display": "Determination of body mass index (BMI)"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "26742248",
+                            "display": "Determination of body mass index (BMI)"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://www.icd10data.com/icd10pcs",
+                            "code": "F02Z8ZZ",
+                            "display": "F02Z8ZZ"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "39156-5",
+                            "display": "39156-5"
+                        },
+                        {
+                            "system": "http://www.ama-assn.org/go/cpt"
+                        },
+                        {
+                            "system": "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "698094009",
+                            "display": "698094009"
+                        }
+                    ],
+                    "text": "BMI"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Observation/213",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "213",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:19.484+00:00",
+                    "source": "#Bj6CyVOj2Lk3pvrR"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/ProblemBodyloc",
+                        "valueString": "Cardiovascular"
+                    },
+                    {
+                        "url": "http://fhir.com/Domain",
+                        "valueString": "problem"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "exam"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "66938587",
+                            "display": "Normal first heart sound"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "66938587",
+                            "display": "Normal first heart sound"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "26198000",
+                            "display": "26198000"
+                        }
+                    ],
+                    "text": "Normal S1"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "valueString": "physical_examination"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Observation/214",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "214",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:19.655+00:00",
+                    "source": "#yMlNXYr0NiBNvq0z"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/ProblemBodyloc",
+                        "valueString": "bilateral feet"
+                    },
+                    {
+                        "url": "http://fhir.com/Domain",
+                        "valueString": "problem"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "exam"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "46924",
+                            "display": "Decreased sensation"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "46924",
+                            "display": "Decreased sensation"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "782.0",
+                            "display": "782.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "R20.8",
+                            "display": "R20.8"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "247322000",
+                            "display": "247322000"
+                        }
+                    ],
+                    "text": "Diminished sensation"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "valueString": "physical_examination"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Observation/215",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "215",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:19.829+00:00",
+                    "source": "#EvZFd1t9B8405YsP"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/Domain",
+                        "valueString": "problem"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "exam"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "334677",
+                            "display": "Type 2 diabetes mellitus"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "334677",
+                            "display": "Type 2 diabetes mellitus"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "250.00",
+                            "display": "250.00"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "E11.9",
+                            "display": "E11.9"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "44054006",
+                            "display": "44054006"
+                        }
+                    ],
+                    "text": "Type 2 Diabetes"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "valueString": "physical_examination"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Observation/216",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "216",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:19.975+00:00",
+                    "source": "#SMbkCYqxk3l6ZTae"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/ProblemBodyloc",
+                        "valueString": "peripheral"
+                    },
+                    {
+                        "url": "http://fhir.com/Domain",
+                        "valueString": "problem"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "exam"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "52135",
+                            "display": "Peripheral neuropathy"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "52135",
+                            "display": "Peripheral neuropathy"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "356.9",
+                            "display": "356.9"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "G62.9",
+                            "display": "G62.9"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "302226006",
+                            "display": "302226006"
+                        }
+                    ],
+                    "text": "peripheral neuropathy"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "valueString": "physical_examination"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Observation/217",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "217",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:20.230+00:00",
+                    "source": "#YHPLj5drOy4f83eM"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/Domain",
+                        "valueString": "problem"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "exam"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "33960359",
+                            "display": "Well-controlled hypertension"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "33960359",
+                            "display": "Well-controlled hypertension"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "401.9",
+                            "display": "401.9"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "I10",
+                            "display": "I10"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "170577003",
+                            "display": "170577003"
+                        }
+                    ],
+                    "text": "Well-controlled Hypertension"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "valueString": "physical_examination"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Observation/218",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "218",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:20.385+00:00",
+                    "source": "#kwSUdSeAZHyNscG5"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/Domain",
+                        "valueString": "problem"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "exam"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "92278",
+                            "display": "Obesity"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "92278",
+                            "display": "Obesity"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "278.00",
+                            "display": "278.00"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "E66.9",
+                            "display": "E66.9"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "414916001:414916001:414915002",
+                            "display": "414916001:414916001:414915002"
+                        }
+                    ],
+                    "text": "Obesity"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "valueString": "physical_examination"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/AllergyIntolerance/352",
+            "resource": {
+                "resourceType": "AllergyIntolerance",
+                "id": "352",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-01T17:50:53.588+00:00",
+                    "source": "#ayOzdhaNzpY3sxRj"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+                            "code": "active"
+                        }
+                    ]
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+                            "code": "unconfirmed"
+                        }
+                    ]
+                },
+                "type": "allergy",
+                "category": [
+                    "medication"
+                ],
+                "criticality": "low",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "2670",
+                            "display": "codeine"
+                        }
+                    ],
+                    "text": "codeine"
+                },
+                "patient": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2021-01-05T15:37:42-08:00",
+                "reaction": [
+                    {
+                        "manifestation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "41291007",
+                                        "display": "Angioedema"
+                                    }
+                                ],
+                                "text": "Angioedema"
+                            }
+                        ],
+                        "severity": "severe"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Condition/225",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "225",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:27.571+00:00",
+                    "source": "#OCEfOMV1uVHM5rQK"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "Active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "hpi",
+                                "display": "History of present illness"
+                            }
+                        ],
+                        "text": "History of present illness"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "370857",
+                            "display": "Numbness and tingling"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "1712597",
+                            "display": "Numbness and tingling sensation of skin"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "782.0",
+                            "display": "782.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "R20.2:R20.0",
+                            "display": "R20.2:R20.0"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "101000119102",
+                            "display": "101000119102"
+                        }
+                    ],
+                    "text": "numbness and tingling"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2025-01-20T01:24:27.563113"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Condition/226",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "226",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:27.846+00:00",
+                    "source": "#bzSVBXnk4qxZ5MvF"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "Active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "hpi",
+                                "display": "History of present illness"
+                            }
+                        ],
+                        "text": "History of present illness"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "57051",
+                            "display": "Weight loss"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "57051",
+                            "display": "Weight loss"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "783.21",
+                            "display": "783.21"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "R63.4",
+                            "display": "R63.4"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "89362005:262285001",
+                            "display": "89362005:262285001"
+                        }
+                    ],
+                    "text": "weight loss"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2025-01-20T01:24:27.838490"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/FamilyMemberHistory/227",
+            "resource": {
+                "resourceType": "FamilyMemberHistory",
+                "id": "227",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:33.103+00:00",
+                    "source": "#uh1tDiEG30Y7I0FK"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/ProblemSubject",
+                        "valueString": "Father"
+                    }
+                ],
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/183"
+                },
+                "date": "2025-01-20T01:24:33.091235",
+                "relationship": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                            "code": "FAMMEMB",
+                            "display": "family member"
+                        }
+                    ],
+                    "text": "family member"
+                },
+                "condition": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://e-imo.com/products/problem-it",
+                                    "code": "598990",
+                                    "display": "Family history of obesity"
+                                },
+                                {
+                                    "system": "http://e-imo.com/products/problem-it-default",
+                                    "code": "598990",
+                                    "display": "Family history of obesity"
+                                },
+                                {
+                                    "system": "http://fhir.com/Score",
+                                    "code": "1.0",
+                                    "display": "1.0"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                                    "code": "V18.19",
+                                    "display": "V18.19"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                    "code": "Z83.49",
+                                    "display": "Z83.49"
+                                },
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "160311006",
+                                    "display": "160311006"
+                                }
+                            ],
+                            "text": "Obesity"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/FamilyMemberHistory/228",
+            "resource": {
+                "resourceType": "FamilyMemberHistory",
+                "id": "228",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:33.273+00:00",
+                    "source": "#Q8DBhy9AgglGBeQw"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/ProblemSubject",
+                        "valueString": "Father"
+                    }
+                ],
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/183"
+                },
+                "date": "2025-01-20T01:24:33.235683",
+                "relationship": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                            "code": "FAMMEMB",
+                            "display": "family member"
+                        }
+                    ],
+                    "text": "family member"
+                },
+                "condition": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://e-imo.com/products/problem-it",
+                                    "code": "1708371",
+                                    "display": "Family history of osteoarthritis"
+                                },
+                                {
+                                    "system": "http://e-imo.com/products/problem-it-default",
+                                    "code": "1708371",
+                                    "display": "Family history of osteoarthritis"
+                                },
+                                {
+                                    "system": "http://fhir.com/Score",
+                                    "code": "1.0",
+                                    "display": "1.0"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                                    "code": "V17.89",
+                                    "display": "V17.89"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                    "code": "Z82.69",
+                                    "display": "Z82.69"
+                                },
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "160414002",
+                                    "display": "160414002"
+                                }
+                            ],
+                            "text": "Osteoarthritis"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/FamilyMemberHistory/229",
+            "resource": {
+                "resourceType": "FamilyMemberHistory",
+                "id": "229",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:33.407+00:00",
+                    "source": "#8Tg2OuLXUdb1kk0l"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/ProblemSubject",
+                        "valueString": "Mother"
+                    }
+                ],
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/183"
+                },
+                "date": "2025-01-20T01:24:33.396490",
+                "relationship": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                            "code": "FAMMEMB",
+                            "display": "family member"
+                        }
+                    ],
+                    "text": "family member"
+                },
+                "condition": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://e-imo.com/products/problem-it",
+                                    "code": "598666",
+                                    "display": "Family history of hypertension"
+                                },
+                                {
+                                    "system": "http://e-imo.com/products/problem-it-default",
+                                    "code": "598666",
+                                    "display": "Family history of hypertension"
+                                },
+                                {
+                                    "system": "http://fhir.com/Score",
+                                    "code": "1.0",
+                                    "display": "1.0"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                                    "code": "V17.49",
+                                    "display": "V17.49"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                    "code": "Z82.49",
+                                    "display": "Z82.49"
+                                },
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "160357008",
+                                    "display": "160357008"
+                                }
+                            ],
+                            "text": "Hypertension"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/FamilyMemberHistory/230",
+            "resource": {
+                "resourceType": "FamilyMemberHistory",
+                "id": "230",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:33.541+00:00",
+                    "source": "#RIQqd607yWJo5jin"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/ProblemSubject",
+                        "valueString": "Mother"
+                    }
+                ],
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/183"
+                },
+                "date": "2025-01-20T01:24:33.528384",
+                "relationship": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                            "code": "FAMMEMB",
+                            "display": "family member"
+                        }
+                    ],
+                    "text": "family member"
+                },
+                "condition": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://e-imo.com/products/problem-it",
+                                    "code": "313107",
+                                    "display": "Family history of stroke"
+                                },
+                                {
+                                    "system": "http://e-imo.com/products/problem-it-default",
+                                    "code": "313083",
+                                    "display": "Family history of cerebrovascular accident (CVA)"
+                                },
+                                {
+                                    "system": "http://fhir.com/Score",
+                                    "code": "1.0",
+                                    "display": "1.0"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                                    "code": "V17.1",
+                                    "display": "V17.1"
+                                },
+                                {
+                                    "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                                    "code": "Z82.3",
+                                    "display": "Z82.3"
+                                },
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "275104002",
+                                    "display": "275104002"
+                                }
+                            ],
+                            "text": "Stroke"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Condition/231",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "231",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:38.778+00:00",
+                    "source": "#IGmxuXVFDxfFpMFd"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/ProblemTemporal",
+                        "valueString": "15 years"
+                    }
+                ],
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "Active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "334677",
+                            "display": "Type 2 diabetes mellitus"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "334677",
+                            "display": "Type 2 diabetes mellitus"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "250.00",
+                            "display": "250.00"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "E11.9",
+                            "display": "E11.9"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "44054006",
+                            "display": "44054006"
+                        }
+                    ],
+                    "text": "Type 2 Diabetes"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2025-01-20T01:24:38.766740"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Condition/232",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "232",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:38.926+00:00",
+                    "source": "#hkMHwsxIjPyjJlvm"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/ProblemTemporal",
+                        "valueString": "15 years"
+                    },
+                    {
+                        "url": "http://fhir.com/ProblemBodyloc",
+                        "valueString": "peripheral"
+                    }
+                ],
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "Active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "52135",
+                            "display": "Peripheral neuropathy"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "52135",
+                            "display": "Peripheral neuropathy"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "356.9",
+                            "display": "356.9"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "G62.9",
+                            "display": "G62.9"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "302226006",
+                            "display": "302226006"
+                        }
+                    ],
+                    "text": "peripheral neuropathy"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2025-01-20T01:24:38.915670"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Condition/233",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "233",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:39.069+00:00",
+                    "source": "#GzBzRxUResAgjaPy"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/ProblemTemporal",
+                        "valueString": "20 years"
+                    }
+                ],
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "Active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "86491",
+                            "display": "Hypertension"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "86491",
+                            "display": "Hypertension"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "401.9",
+                            "display": "401.9"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "I10",
+                            "display": "I10"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "38341003",
+                            "display": "38341003"
+                        }
+                    ],
+                    "text": "Hypertension"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2025-01-20T01:24:39.059590"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Condition/234",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "234",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:39.211+00:00",
+                    "source": "#ncg96iIbaJdfft5L"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "Active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "92278",
+                            "display": "Obesity"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "92278",
+                            "display": "Obesity"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "278.00",
+                            "display": "278.00"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "E66.9",
+                            "display": "E66.9"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "414916001:414916001:414915002",
+                            "display": "414916001:414916001:414915002"
+                        }
+                    ],
+                    "text": "Obesity"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2025-01-20T01:24:39.202782"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Condition/235",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "235",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:39.560+00:00",
+                    "source": "#pozn5d1rRJuVjLkN"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "Active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "51143",
+                            "display": "Osteoarthritis"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "51143",
+                            "display": "Osteoarthritis"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "715.90",
+                            "display": "715.90"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "M19.90",
+                            "display": "M19.90"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "396275006",
+                            "display": "396275006"
+                        }
+                    ],
+                    "text": "Osteoarthritis"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2025-01-20T01:24:39.549786"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Condition/236",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "236",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:44.756+00:00",
+                    "source": "#3ANASrXsrLLkAqFb"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "Resolved",
+                            "display": "Resolved"
+                        }
+                    ],
+                    "text": "Resolved"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "medical-history",
+                                "display": "Past medical history"
+                            }
+                        ],
+                        "text": "Past medical history"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "334677",
+                            "display": "Type 2 diabetes mellitus"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "334677",
+                            "display": "Type 2 diabetes mellitus"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "250.00",
+                            "display": "250.00"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "E11.9",
+                            "display": "E11.9"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "44054006",
+                            "display": "44054006"
+                        }
+                    ],
+                    "text": "Type 2 Diabetes"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2025-01-20T01:24:44.745702"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Condition/237",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "237",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:44.897+00:00",
+                    "source": "#e3YIvo8EzR93nv2O"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "Resolved",
+                            "display": "Resolved"
+                        }
+                    ],
+                    "text": "Resolved"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "medical-history",
+                                "display": "Past medical history"
+                            }
+                        ],
+                        "text": "Past medical history"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "86491",
+                            "display": "Hypertension"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "86491",
+                            "display": "Hypertension"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "401.9",
+                            "display": "401.9"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "I10",
+                            "display": "I10"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "38341003",
+                            "display": "38341003"
+                        }
+                    ],
+                    "text": "Hypertension"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2025-01-20T01:24:44.887078"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Condition/238",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "238",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:45.027+00:00",
+                    "source": "#AO8ZWXO1kQWEPB4Z"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "Resolved",
+                            "display": "Resolved"
+                        }
+                    ],
+                    "text": "Resolved"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "medical-history",
+                                "display": "Past medical history"
+                            }
+                        ],
+                        "text": "Past medical history"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "92278",
+                            "display": "Obesity"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "92278",
+                            "display": "Obesity"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "278.00",
+                            "display": "278.00"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "E66.9",
+                            "display": "E66.9"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "414916001:414916001:414915002",
+                            "display": "414916001:414916001:414915002"
+                        }
+                    ],
+                    "text": "Obesity"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2025-01-20T01:24:45.019783"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Condition/302",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "302",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-01T07:24:55.866+00:00",
+                    "source": "#XRBvZTrJb1pexs1M"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "Active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ],
+                    "text": "Confirmed"
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "334677",
+                            "display": "Type 2 diabetes mellitus"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "334677",
+                            "display": "Type 2 diabetes mellitus"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "250.00",
+                            "display": "250.00"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "E11.9",
+                            "display": "E11.9"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "44054006",
+                            "display": "44054006"
+                        }
+                    ],
+                    "text": "Type 2 Diabetes"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2025-01-10"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Observation/239",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "239",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-20T01:24:47.002+00:00",
+                    "source": "#JliXX6kOrmOjKfkp"
+                },
+                "extension": [
+                    {
+                        "url": "http://fhir.com/Domain",
+                        "valueString": "problem"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/observation-category",
+                                "code": "social-history"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://e-imo.com/products/problem-it",
+                            "code": "1002865",
+                            "display": "Non-smoker"
+                        },
+                        {
+                            "system": "http://e-imo.com/products/problem-it-default",
+                            "code": "1002865",
+                            "display": "Non-smoker"
+                        },
+                        {
+                            "system": "http://fhir.com/Score",
+                            "code": "1.0",
+                            "display": "1.0"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                            "code": "V49.89",
+                            "display": "V49.89"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                            "code": "Z78.9",
+                            "display": "Z78.9"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "8392000",
+                            "display": "8392000"
+                        }
+                    ],
+                    "text": "Non-smoker"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "valueString": "social_history"
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/AllergyIntolerance/303",
+            "resource": {
+                "resourceType": "AllergyIntolerance",
+                "id": "303",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-01T07:27:58.243+00:00",
+                    "source": "#Bnqdie3S6oJC3aNU"
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+                            "code": "active"
+                        }
+                    ]
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+                            "code": "unconfirmed"
+                        }
+                    ]
+                },
+                "type": "allergy",
+                "category": [
+                    "medication"
+                ],
+                "criticality": "low",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "2670",
+                            "display": "codeine"
+                        }
+                    ],
+                    "text": "codeine"
+                },
+                "patient": {
+                    "reference": "Patient/183"
+                },
+                "recordedDate": "2021-01-05T15:37:42-08:00",
+                "reaction": [
+                    {
+                        "manifestation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "41291007",
+                                        "display": "Angioedema"
+                                    }
+                                ],
+                                "text": "Angioedema"
+                            }
+                        ],
+                        "severity": "severe"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/MedicationRequest/304",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "304",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-01T07:29:20.353+00:00",
+                    "source": "#tdxDNSZtSY7RgrB4"
+                },
+                "status": "active",
+                "intent": "order",
+                "medicationReference": {
+                    "reference": "Medication/108"
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "authoredOn": "2025-01-10",
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "display": "{'text': 'high blood pressure', 'imo_response': {'lexical_code': '58222', 'lexical_title': 'High blood pressure', 'default_lexical_code': '86491', 'default_lexical_title': 'Hypertension', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '401.9', 'title': 'Unspecified essential hypertension', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'I10', 'title': 'Essential (primary) hypertension', 'map_type': 'Preferred primary', 'relationship_type': 'Narrower than', 'code_metadata': {'ccsr': [{'ccsr_category': 'CIR007', 'ccsr_description': 'Essential hypertension'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '38341003', 'title': 'Hypertensive disorder', 'map_type': 'Preferred primary', 'mesh_code': 'D006973', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': True}}, 'score': 1, 'certainty': 'Exact'}}"
+                            },
+                            {
+                                "system": "http://snomed.info/sct",
+                                "display": "{'text': 'hormone imbalance', 'imo_response': {'lexical_code': '3541541', 'lexical_title': 'Hormone imbalance', 'default_lexical_code': '800608', 'default_lexical_title': 'Disorder of endocrine system', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '259.9', 'title': 'Unspecified endocrine disorder', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'E34.9', 'title': 'Endocrine disorder, unspecified', 'map_type': 'Preferred primary', 'relationship_type': 'Same as', 'code_metadata': {'ccsr': [{'ccsr_category': 'END015', 'ccsr_description': 'Other specified and unspecified endocrine disorders'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '362969004', 'title': 'Disorder of endocrine system', 'map_type': 'Preferred primary', 'mesh_code': 'D004700', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 1, 'certainty': 'Exact'}}"
+                            },
+                            {
+                                "system": "http://snomed.info/sct",
+                                "display": "{'text': 'prevent kidney stones', 'imo_response': {'lexical_code': '11898', 'lexical_title': 'Kidney stone', 'default_lexical_code': '47623', 'default_lexical_title': 'Calculus of kidney', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '592.0', 'title': 'Calculus of kidney', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'N20.0', 'title': 'Calculus of kidney', 'map_type': 'Preferred primary', 'relationship_type': 'Same as', 'code_metadata': {'ccsr': [{'ccsr_category': 'GEN005', 'ccsr_description': 'Calculus of urinary tract'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '95570007', 'title': 'Kidney stone', 'map_type': 'Preferred primary', 'mesh_code': 'D053040', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 0.811, 'certainty': 'Interpreted'}}"
+                            },
+                            {
+                                "system": "http://snomed.info/sct",
+                                "display": "{'text': 'swelling', 'imo_response': {'lexical_code': '27791', 'lexical_title': 'Swelling', 'default_lexical_code': '27791', 'default_lexical_title': 'Swelling', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '782.3', 'title': 'Edema', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'R60.9', 'title': 'Edema, unspecified', 'map_type': 'Preferred primary', 'relationship_type': 'Narrower than', 'code_metadata': {'ccsr': [{'ccsr_category': 'SYM016', 'ccsr_description': 'Other general signs and symptoms'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '65124004', 'title': 'Swelling', 'map_type': 'Preferred primary', 'mesh_code': '', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 1, 'certainty': 'Exact'}}"
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Tell your doctor and pharmacist if you ever had an allergic reaction to a medicine."
+                    },
+                    {
+                        "text": "Do not use the medication any more than instructed."
+                    },
+                    {
+                        "text": "This medicine may cause dizziness or fainting.  Do not stand or sit up quickly."
+                    },
+                    {
+                        "text": "Your ability to stay alert or to react quickly may be impaired by this medicine. Do not drive or operate machinery until you know how this medicine will affect you."
+                    },
+                    {
+                        "text": "Please check with your doctor before drinking alcohol while on this medicine."
+                    },
+                    {
+                        "text": "This medicine passes into breast milk. Ask your doctor before breastfeeding."
+                    },
+                    {
+                        "text": "During pregnancy, this medicine should be used only when clearly needed. Talk to your doctor about the risks and benefits."
+                    },
+                    {
+                        "text": "Do not share this medicine with anyone who has not been prescribed this medicine."
+                    }
+                ],
+                "dosageInstruction": [
+                    {
+                        "additionalInstruction": [
+                            {
+                                "coding": [
+                                    {
+                                        "display": "This medicine may be taken with or without food."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "This medicine will work best if you take it at about the same time every day."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "Do not take your last dose of the day within 4-6 hours of bedtime."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "Store at room temperature away from heat, light, and moisture.  Do not keep in the bathroom."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "This medicine will make you urinate more. If you have difficulty passing urine, please tell your doctor."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "Tell your doctor if you have severe or persistent sweating, diarrhea or vomiting.   These can increase your risk of a serious side effect."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "This medicine can make you sensitive to the sun. Use sunscreen or protective clothing when in sun."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "It is important that you keep taking each dose of this medicine on time even if you are feeling well."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "If you forget to take a dose on time, take it as soon as you remember. If it is almost time for the next dose, do not take the missed dose. Return to your normal schedule. Do not take 2 doses at one time."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "Drug interactions can change how medicines work or increase risk for side effects. Tell your health care providers about all medicines taken. Include prescription and over-the-counter medicines, vitamins, and herbal medicines. Speak with your doctor or pharmacist before starting or stopping any medicine."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "Tell your doctor if symptoms do not get better or if they get worse."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "This medicine may affect your blood sugar levels.  If you have diabetes, talk to your doctor before changing the dose of your diabetes medicine."
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "display": "Keep all appointments for medical exams and tests while on this medicine."
+                                    }
+                                ]
+                            }
+                        ],
+                        "timing": {
+                            "repeat": {
+                                "duration": 1,
+                                "durationUnit": "d",
+                                "frequency": 3
+                            },
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "https://terminology.hl7.org/5.4.0/CodeSystem-v3-GTSAbbreviation.html#v3-GTSAbbreviation-BID",
+                                        "code": "1",
+                                        "display": "Morning,Day,Evening"
+                                    }
+                                ]
+                            }
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http:/iemr.ehr/med-route",
+                                    "display": "Oral"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "dispenseRequest": {
+                    "validityPeriod": {
+                        "start": "2025-01-10",
+                        "end": "2025-01-11"
+                    }
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Observation/305",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "305",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-02-01T07:30:53.099+00:00",
+                    "source": "#gJYw8NNZYGB6jinF"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://foo",
+                            "code": "12345"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/183"
+                },
+                "effectiveDateTime": "2023-04-19T09:34:50+01:00",
+                "valueQuantity": {
+                    "value": 123,
+                    "unit": "kg",
+                    "system": "http://bar",
+                    "code": "kg"
+                }
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "http://localhost:8080/fhir/Medication/108",
+            "resource": {
+                "resourceType": "Medication",
+                "id": "108",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2025-01-10T10:06:10.405+00:00",
+                    "source": "#L9oAujR5t4K9EGcA"
+                },
+                "extension": [
+                    {
+                        "url": "https://api.meducation.com/V2.0/fdbpem/sideeffects/",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "{'text': 'dizziness or drowsiness', 'imo_response': {'lexical_code': '77199', 'lexical_title': 'Drowsiness', 'default_lexical_code': '27722', 'default_lexical_title': 'Somnolence', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '780.09', 'title': 'Other alteration of consciousness', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'R40.0', 'title': 'Somnolence', 'map_type': 'Preferred primary', 'relationship_type': 'Same as', 'code_metadata': {'ccsr': [{'ccsr_category': 'NVS013', 'ccsr_description': 'Coma; stupor; and brain damage'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '271782001', 'title': 'Drowsy', 'map_type': 'Preferred primary', 'mesh_code': 'D000077260', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 0.576, 'certainty': 'Interpreted'}}"
+                                },
+                                {
+                                    "display": "{'text': 'dry mouth', 'imo_response': {'lexical_code': '8024', 'lexical_title': 'Dry mouth', 'default_lexical_code': '8024', 'default_lexical_title': 'Dry mouth', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '527.7', 'title': 'Disturbance of salivary secretion', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'R68.2', 'title': 'Dry mouth, unspecified', 'map_type': 'Preferred primary', 'relationship_type': 'Same as', 'code_metadata': {'ccsr': [{'ccsr_category': 'DEN001', 'ccsr_description': 'Any dental condition including traumatic injury'}, {'ccsr_category': 'DEN002', 'ccsr_description': 'Nontraumatic dental conditions'}, {'ccsr_category': 'DIG003', 'ccsr_description': 'Diseases of mouth; excluding dental'}, {'ccsr_category': 'SYM016', 'ccsr_description': 'Other general signs and symptoms'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '87715008', 'title': 'Xerostomia', 'map_type': 'Preferred primary', 'mesh_code': 'D014987', 'relationship_type': 'Narrower than'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 1, 'certainty': 'Exact'}}"
+                                },
+                                {
+                                    "display": "{'text': 'lightheadedness', 'imo_response': {'lexical_code': '27708', 'lexical_title': 'Lightheadedness', 'default_lexical_code': '27708', 'default_lexical_title': 'Lightheadedness', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '780.4', 'title': 'Dizziness and giddiness', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'R42', 'title': 'Dizziness and giddiness', 'map_type': 'Preferred primary', 'relationship_type': 'Narrower than', 'code_metadata': {'ccsr': [{'ccsr_category': 'SYM015', 'ccsr_description': 'General sensation/perception signs and symptoms'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '386705008', 'title': 'Lightheadedness', 'map_type': 'Preferred primary', 'mesh_code': 'D004244', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 1, 'certainty': 'Exact'}}"
+                                },
+                                {
+                                    "display": "{'text': 'increased urinary frequency', 'imo_response': {'lexical_code': '515660', 'lexical_title': 'Increased urinary frequency', 'default_lexical_code': '314192', 'default_lexical_title': 'Increased frequency of urination', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '788.41', 'title': 'Urinary frequency', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'R35.0', 'title': 'Frequency of micturition', 'map_type': 'Preferred primary', 'relationship_type': 'Same as', 'code_metadata': {'ccsr': [{'ccsr_category': 'SYM011', 'ccsr_description': 'Genitourinary signs and symptoms'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '162116003', 'title': 'Increased frequency of urination', 'map_type': 'Preferred primary', 'mesh_code': '', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 1, 'certainty': 'Exact'}}"
+                                }
+                            ],
+                            "text": "The following is a list of some common side effects from this medicine. Please speak with your doctor about what you should do if you experience these or other side effects."
+                        }
+                    },
+                    {
+                        "url": "https://api.meducation.com/V2.0/fdbpem/sideeffects/",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "{'text': 'confusion', 'imo_response': {'lexical_code': '40901', 'lexical_title': 'Confusion', 'default_lexical_code': '40901', 'default_lexical_title': 'Confusion', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '298.9', 'title': 'Unspecified psychosis', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'R41.0', 'title': 'Disorientation, unspecified', 'map_type': 'Preferred primary', 'relationship_type': 'Narrower than', 'code_metadata': {'ccsr': [{'ccsr_category': 'SYM010', 'ccsr_description': 'Nervous system signs and symptoms'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '286933003', 'title': 'Confusional state', 'map_type': 'Preferred primary', 'mesh_code': 'D003221', 'relationship_type': 'Narrower than'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 1, 'certainty': 'Exact'}}"
+                                },
+                                {
+                                    "display": "{'text': 'pain in the eye', 'imo_response': {'lexical_code': '370884', 'lexical_title': 'Pain in the eye', 'default_lexical_code': '27744', 'default_lexical_title': 'Pain in eye', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '379.91', 'title': 'Pain in or around eye', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'H57.10', 'title': 'Ocular pain, unspecified eye', 'map_type': 'Preferred primary', 'relationship_type': 'Same as', 'code_metadata': {'ccsr': [{'ccsr_category': 'EYE012', 'ccsr_description': 'Other specified eye disorders'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '41652007', 'title': 'Pain in eye', 'map_type': 'Preferred primary', 'mesh_code': 'D058447', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': True}}, 'score': 1, 'certainty': 'Exact'}}"
+                                },
+                                {
+                                    "display": "{'text': 'fainting', 'imo_response': {'lexical_code': '55341', 'lexical_title': 'Fainting', 'default_lexical_code': '55350', 'default_lexical_title': 'Syncope', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '780.2', 'title': 'Syncope and collapse', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'R55', 'title': 'Syncope and collapse', 'map_type': 'Preferred primary', 'relationship_type': 'Narrower than', 'code_metadata': {'ccsr': [{'ccsr_category': 'SYM001', 'ccsr_description': 'Syncope'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '271594007', 'title': 'Syncope', 'map_type': 'Preferred primary', 'mesh_code': 'D013575', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': True}}, 'score': 1, 'certainty': 'Exact'}}"
+                                },
+                                {
+                                    "display": "{'text': 'fast, irregular, or slow heartbeat', 'imo_response': {'lexical_code': '360846', 'lexical_title': 'Rapid or irregular heartbeat', 'default_lexical_code': '360846', 'default_lexical_title': 'Rapid or irregular heartbeat', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '785.0', 'title': 'Tachycardia, unspecified', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'R00.0', 'title': 'Tachycardia, unspecified', 'map_type': 'Preferred primary', 'relationship_type': 'Narrower than', 'code_metadata': {'ccsr': [{'ccsr_category': 'SYM012', 'ccsr_description': 'Circulatory signs and symptoms'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '106066004', 'title': 'Cardiac rhythm AND/OR rate finding', 'map_type': 'Preferred primary', 'mesh_code': '', 'relationship_type': 'Narrower than'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 0.725, 'certainty': 'Interpreted'}}"
+                                },
+                                {
+                                    "display": "{'text': 'muscle cramps or weakness', 'imo_response': {'lexical_code': '711336', 'lexical_title': 'Decreased muscle strength', 'default_lexical_code': '711336', 'default_lexical_title': 'Decreased muscle strength', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '728.87', 'title': 'Muscle weakness (generalized)', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'M62.81', 'title': 'Muscle weakness (generalized)', 'map_type': 'Preferred primary', 'relationship_type': 'Narrower than', 'code_metadata': {'ccsr': [{'ccsr_category': 'MUS026', 'ccsr_description': 'Muscle disorders'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '26544005', 'title': 'Muscle weakness', 'map_type': 'Preferred primary', 'mesh_code': 'D018908', 'relationship_type': 'Narrower than'}, {'code': '26544005', 'title': 'Muscle weakness', 'map_type': 'Preferred primary', 'mesh_code': 'D010291', 'relationship_type': 'Narrower than'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 0.503, 'certainty': 'Interpreted'}}"
+                                },
+                                {
+                                    "display": "{'text': 'persistent or unusual thirst', 'imo_response': {'lexical_code': '62518779', 'lexical_title': 'Cephalopelvic disproportion due to unusually large fetus, fetus 6 or greater', 'default_lexical_code': '62518779', 'default_lexical_title': 'Cephalopelvic disproportion due to unusually large fetus, fetus 6 or greater', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '653.50', 'title': 'Unusually large fetus causing disproportion, unspecified as to episode of care', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'O33.5XX9', 'title': 'Maternal care for disproportion due to unusually large fetus, other fetus', 'map_type': 'Preferred primary', 'relationship_type': 'Narrower than', 'code_metadata': {'ccsr': [{'ccsr_category': 'PRG024', 'ccsr_description': 'Malposition, disproportion or other labor complications'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '199397009', 'title': 'Cephalopelvic disproportion', 'map_type': 'Preferred primary', 'mesh_code': 'D052178', 'relationship_type': 'Narrower than'}, {'code': '1258897005', 'title': 'Fetal disproportion due to large fetus', 'map_type': 'Non-preferred primary', 'mesh_code': '', 'relationship_type': 'Narrower than'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 0.218, 'certainty': 'No Match'}}"
+                                },
+                                {
+                                    "display": "{'text': 'urinating less often', 'imo_response': {'lexical_code': '314192', 'lexical_title': 'Increased frequency of urination', 'default_lexical_code': '314192', 'default_lexical_title': 'Increased frequency of urination', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '788.41', 'title': 'Urinary frequency', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'R35.0', 'title': 'Frequency of micturition', 'map_type': 'Preferred primary', 'relationship_type': 'Same as', 'code_metadata': {'ccsr': [{'ccsr_category': 'SYM011', 'ccsr_description': 'Genitourinary signs and symptoms'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '162116003', 'title': 'Increased frequency of urination', 'map_type': 'Preferred primary', 'mesh_code': '', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 0.333, 'certainty': 'No Match'}}"
+                                },
+                                {
+                                    "display": "{'text': 'blurring or changes of vision', 'imo_response': {'lexical_code': '808788', 'lexical_title': 'Blurry vision', 'default_lexical_code': '320778', 'default_lexical_title': 'Blurring of visual image', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '368.8', 'title': 'Other specified visual disturbances', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'H53.8', 'title': 'Other visual disturbances', 'map_type': 'Preferred primary', 'relationship_type': 'Narrower than', 'code_metadata': {'ccsr': [{'ccsr_category': 'EYE010', 'ccsr_description': 'Blindness and vision defects'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '111516008', 'title': 'Blurring of visual image', 'map_type': 'Preferred primary', 'mesh_code': '', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 0.704, 'certainty': 'Interpreted'}}"
+                                }
+                            ],
+                            "text": "Call your doctor or get medical help right away if you notice any of these more serious side effects:"
+                        }
+                    },
+                    {
+                        "url": "https://api.meducation.com/V2.0/fdbpem/sideeffects/",
+                        "valueCodeableConcept": {
+                            "text": "A few people may have an allergic reaction to this medicine. Symptoms can include difficulty breathing, skin rash, itching, swelling, or severe dizziness.  If you notice any of these symptoms, seek medical help quickly."
+                        }
+                    },
+                    {
+                        "url": "https://api.meducation.com/V2.0/fdbpem/uses/",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "{'text': 'high blood pressure', 'imo_response': {'lexical_code': '58222', 'lexical_title': 'High blood pressure', 'default_lexical_code': '86491', 'default_lexical_title': 'Hypertension', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '401.9', 'title': 'Unspecified essential hypertension', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'I10', 'title': 'Essential (primary) hypertension', 'map_type': 'Preferred primary', 'relationship_type': 'Narrower than', 'code_metadata': {'ccsr': [{'ccsr_category': 'CIR007', 'ccsr_description': 'Essential hypertension'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '38341003', 'title': 'Hypertensive disorder', 'map_type': 'Preferred primary', 'mesh_code': 'D006973', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': True}}, 'score': 1, 'certainty': 'Exact'}}"
+                                },
+                                {
+                                    "display": "{'text': 'hormone imbalance', 'imo_response': {'lexical_code': '3541541', 'lexical_title': 'Hormone imbalance', 'default_lexical_code': '800608', 'default_lexical_title': 'Disorder of endocrine system', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '259.9', 'title': 'Unspecified endocrine disorder', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'E34.9', 'title': 'Endocrine disorder, unspecified', 'map_type': 'Preferred primary', 'relationship_type': 'Same as', 'code_metadata': {'ccsr': [{'ccsr_category': 'END015', 'ccsr_description': 'Other specified and unspecified endocrine disorders'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '362969004', 'title': 'Disorder of endocrine system', 'map_type': 'Preferred primary', 'mesh_code': 'D004700', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 1, 'certainty': 'Exact'}}"
+                                },
+                                {
+                                    "display": "{'text': 'prevent kidney stones', 'imo_response': {'lexical_code': '11898', 'lexical_title': 'Kidney stone', 'default_lexical_code': '47623', 'default_lexical_title': 'Calculus of kidney', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '592.0', 'title': 'Calculus of kidney', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'N20.0', 'title': 'Calculus of kidney', 'map_type': 'Preferred primary', 'relationship_type': 'Same as', 'code_metadata': {'ccsr': [{'ccsr_category': 'GEN005', 'ccsr_description': 'Calculus of urinary tract'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '95570007', 'title': 'Kidney stone', 'map_type': 'Preferred primary', 'mesh_code': 'D053040', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 0.811, 'certainty': 'Interpreted'}}"
+                                },
+                                {
+                                    "display": "{'text': 'swelling', 'imo_response': {'lexical_code': '27791', 'lexical_title': 'Swelling', 'default_lexical_code': '27791', 'default_lexical_title': 'Swelling', 'metadata': {'mappings': {'icd9cm': {'codes': [{'code': '782.3', 'title': 'Edema', 'map_type': 'Preferred primary'}]}, 'icd10cm': {'codes': [{'code': 'R60.9', 'title': 'Edema, unspecified', 'map_type': 'Preferred primary', 'relationship_type': 'Narrower than', 'code_metadata': {'ccsr': [{'ccsr_category': 'SYM016', 'ccsr_description': 'Other general signs and symptoms'}], 'hcc': []}}]}, 'snomedInternational': {'codes': [{'code': '65124004', 'title': 'Swelling', 'map_type': 'Preferred primary', 'mesh_code': '', 'relationship_type': 'Same as'}]}}, 'flags': {'is_icd10cm_refinable': False}}, 'score': 1, 'certainty': 'Exact'}}"
+                                }
+                            ],
+                            "text": "This medicine is used for the following purposes:"
+                        }
+                    },
+                    {
+                        "url": "https://api.meducation.com/V2.0/fdbpem/instructions/",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "This medicine may be taken with or without food."
+                                },
+                                {
+                                    "display": "This medicine will work best if you take it at about the same time every day."
+                                },
+                                {
+                                    "display": "Do not take your last dose of the day within 4-6 hours of bedtime."
+                                },
+                                {
+                                    "display": "Store at room temperature away from heat, light, and moisture.  Do not keep in the bathroom."
+                                },
+                                {
+                                    "display": "This medicine will make you urinate more. If you have difficulty passing urine, please tell your doctor."
+                                },
+                                {
+                                    "display": "Tell your doctor if you have severe or persistent sweating, diarrhea or vomiting.   These can increase your risk of a serious side effect."
+                                },
+                                {
+                                    "display": "This medicine can make you sensitive to the sun. Use sunscreen or protective clothing when in sun."
+                                },
+                                {
+                                    "display": "It is important that you keep taking each dose of this medicine on time even if you are feeling well."
+                                },
+                                {
+                                    "display": "If you forget to take a dose on time, take it as soon as you remember. If it is almost time for the next dose, do not take the missed dose. Return to your normal schedule. Do not take 2 doses at one time."
+                                },
+                                {
+                                    "display": "Drug interactions can change how medicines work or increase risk for side effects. Tell your health care providers about all medicines taken. Include prescription and over-the-counter medicines, vitamins, and herbal medicines. Speak with your doctor or pharmacist before starting or stopping any medicine."
+                                },
+                                {
+                                    "display": "Tell your doctor if symptoms do not get better or if they get worse."
+                                },
+                                {
+                                    "display": "This medicine may affect your blood sugar levels.  If you have diabetes, talk to your doctor before changing the dose of your diabetes medicine."
+                                },
+                                {
+                                    "display": "Keep all appointments for medical exams and tests while on this medicine."
+                                }
+                            ],
+                            "text": "Instructions"
+                        }
+                    },
+                    {
+                        "url": "https://api.meducation.com/V2.0/fdbpem/cautions/",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "display": "Tell your doctor and pharmacist if you ever had an allergic reaction to a medicine."
+                                },
+                                {
+                                    "display": "Do not use the medication any more than instructed."
+                                },
+                                {
+                                    "display": "This medicine may cause dizziness or fainting.  Do not stand or sit up quickly."
+                                },
+                                {
+                                    "display": "Your ability to stay alert or to react quickly may be impaired by this medicine. Do not drive or operate machinery until you know how this medicine will affect you."
+                                },
+                                {
+                                    "display": "Please check with your doctor before drinking alcohol while on this medicine."
+                                },
+                                {
+                                    "display": "This medicine passes into breast milk. Ask your doctor before breastfeeding."
+                                },
+                                {
+                                    "display": "During pregnancy, this medicine should be used only when clearly needed. Talk to your doctor about the risks and benefits."
+                                },
+                                {
+                                    "display": "Do not share this medicine with anyone who has not been prescribed this medicine."
+                                }
+                            ],
+                            "text": "Cautions"
+                        }
+                    },
+                    {
+                        "url": "https://api.meducation.com/V2.0/fdbpem/route/",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://api.meducation.com/V2.0/fdbpem/route/",
+                                    "display": "Oral"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "https://api.meducation.com/V2.0/fdbpem/pdf",
+                        "valueString": "https://apidev.meducation.com/V2.0/pmipdf/3589?userId=umc&languageCode=en"
+                    },
+                    {
+                        "url": "https://api.meducation.com/V2.0/fdbpem/web_url",
+                        "valueString": "https://api.meducation.com/V2.0/fdbpem/9066"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://api.meducation.com/V2.0/fdbpem"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://api.meducation.com/V2.0/fdbpem",
+                            "code": "Hydrochlorothiazide Oral Tablet 25 mg",
+                            "display": "Hydrochlorothiazide Oral Tablet 25 mg"
+                        }
+                    ],
+                    "text": "Hydrochlorothiazide Oral Tablet 25 mg"
+                },
+                "status": "active",
+                "form": {
+                    "coding": [
+                        {
+                            "system": "http://fhir.com/form",
+                            "code": "Tablet",
+                            "display": "Tablet"
+                        }
+                    ]
+                },
+                "ingredient": [
+                    {
+                        "itemCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.com/ingredient",
+                                    "code": "Hydrochlorothiazide",
+                                    "display": "Hydrochlorothiazide"
+                                }
+                            ]
+                        },
+                        "strength": {
+                            "numerator": {
+                                "value": 25.0,
+                                "system": "http://unitsofmeasure.org",
+                                "code": "mg"
+                            }
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}
